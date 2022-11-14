@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 10px auto 360px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+/* Product */
+.main__product {
+    display: flex;
+    padding: 10px;
+}
+
+.main__product-img {
+    width: 40%;
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.main__product-info {
+    width: 60%;
+    padding: 10px;
+}
+
+/* Column layout */
+.column-layout {
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.column-layout__category {
+    width: 20%;
+    padding: 0 16px;
+}
+
+.column-layout__container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-item {
+    width: 25%;
+    padding: 0 16px;
+}
+
+/* Feature layout */
+.feature-layout {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(192, 227, 222);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(227, 200, 192);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(226, 192, 227);
+}
+
+/*menu*/
+.main__menu__list {display: flex;
+justify-content: center;
+align-items: center;}
+.main__menu__list li 
+{margin: 1rem;
+list-style: none;
+display: inline;
+}
+.main__menu__list a {text-decoration: none;
+color: black;}
+.main__menu__list a:hover {color: rgb(178, 15, 15);}
+
+/*destop first*/
+@media screen and (max-width:768px) {
+.main__product {flex-wrap: wrap;}
+.main__product-info {width: auto;}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;   
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+.column-layout {
+    margin-top: 0px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-layout__container {
+    width: 100%;
+    display: flex;
+}
+.column-item {
+    width: 50%;
+    padding: 0 16px;
+
+}
+.column-layout__category {
+    width: 100%;
+    padding: 0 16px;
+}
+.feature-layout {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 45%;
+}
+}
+@media screen and (max-width:480px) {
+  
+.main__menu__list {
+    display: block;
+    margin: 0px;
+    padding: 0;
+
+}
+
+ .main__menu__list li {
+        display: flex;
+        display: block;
+        text-align: left;
+        margin: 5px;
+    }
+    .main__menu__list a {
+        padding: 1rem ;
+        margin: 0.5rem;
+
+    
+    }
+    .main__menu__list li:hover {
+        background-color: rgb(136, 19, 19);
+
+    }
+    .main__menu__list li a:hover {
+        color: white;
+    }
+    .feature-layout {
+        margin-top: 36px;
+        display: flex;
+    }
+    .feature-item {
+        padding: 12px 16px;
+        margin-top: 16px;
+        flex-basis: 100%;
+    }
+    .column-item {
+        width: 100%;
+        padding: 0 16px;
+    
+    }
+    
+}
+@media screen and (max-width:320px) {
+    .column-layout__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .column-item {
+        width: 100%;
+        padding: 0 16px;
+    
+    }
+    .column-layout {
+        margin-top: 0px;
+        padding: 12px 0;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
